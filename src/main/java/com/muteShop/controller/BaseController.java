@@ -3,6 +3,7 @@ package com.muteShop.controller;
 import com.muteShop.error.BusinessException;
 import com.muteShop.error.EmBusinessError;
 import com.muteShop.response.CommonReturnType;
+import org.apache.log4j.Logger;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -22,6 +23,8 @@ import java.util.Map;
  * @Version: 1.0
  */
 public class BaseController {
+    private static Logger log = Logger.getLogger(UserController.class);
+
     public static final String CONTENT_TYPE_FORMED="application/x-www-form-urlencoded";
     //定义exceptionhandler 解决未被controller层吸收的exception
     @ExceptionHandler(Exception.class)

@@ -16,4 +16,16 @@ public interface UserService {
 
     UserModel getUserById(Integer id);
     void register(UserModel userModel) throws BusinessException;
+
+    /**
+     * @Method
+     * @Author
+     * @Version 1.0
+     * @Description encrptPassword :用户加密后的密码  telphone 用户的手机号
+     * @Return
+     * @Exception
+     * @Date
+     */
+
+    UserModel validateLogin(String encrptPassword,String telphone) throws BusinessException;
 }

@@ -7,19 +7,18 @@ import com.muteShop.response.CommonReturnType;
 import com.muteShop.service.UserService;
 import com.muteShop.service.model.UserModel;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.tomcat.util.security.MD5Encoder;
+import org.apache.log4j.Logger;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
-import sun.security.provider.MD5;
 
 import javax.servlet.http.HttpServletRequest;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Random;
+
 
 
 /**
@@ -36,6 +35,7 @@ import java.util.Random;
 //跨域
 @CrossOrigin(allowCredentials = "true",allowedHeaders = "*")
 public class UserController extends BaseController{
+    private static Logger log = Logger.getLogger(UserController.class);
 
     @Autowired
     private UserService userService;
@@ -43,6 +43,23 @@ public class UserController extends BaseController{
     @Autowired
     private HttpServletRequest httpServletRequest;
 
+    //用户登录
+    @RequestMapping(value = "/login" ,method = {RequestMethod.POST} ,consumes = {CONTENT_TYPE_FORMED})
+    @ResponseBody
+    public CommonReturnType login (@RequestParam(name ="telphone")String telphone,
+                                   @RequestParam(name ="password")String password) throws BusinessException, NoSuchAlgorithmException {
+            //入参校验
+        if (StringUtils.isAllEmpty(telphone)
+                || StringUtils.isAllEmpty(password)){
+            throw new BusinessException(EmBusinessError.PARAMETER_VALIDATION_ERROR);
+        }
+        //用户登录是否合法
+        UserModel userModel = userService.validateLogin(this.EncodeByMd5(password),telphone );
+        //将登录凭证加入到用户登录成功的session内
+        this.httpServletRequest.getSession().setAttribute("IS_LOGIN",true);
+        this.httpServletRequest.getSession().setAttribute("LOGIN_USER",userModel);
+        return CommonReturnType.create(null);
+    }
     //用户注册
     @RequestMapping(value = "/register" ,method = {RequestMethod.POST} ,consumes = {CONTENT_TYPE_FORMED})
     @ResponseBody
