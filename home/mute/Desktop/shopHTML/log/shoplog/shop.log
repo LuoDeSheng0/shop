@@ -1,0 +1,569 @@
+2019-03-14 15:47:25.705 ERROR 6841 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: WARN  for 'com.project'
+2019-03-14 15:47:26.161  INFO 6841 --- [main] com.muteShop.App                         : Starting App on mute-PC with PID 6841 (/home/mute/IdeaProjects/shop/target/classes started by mute in /home/mute/IdeaProjects/shop)
+2019-03-14 15:47:26.164  INFO 6841 --- [main] com.muteShop.App                         : No active profile set, falling back to default profiles: default
+2019-03-14 15:47:26.463  INFO 6841 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eb7fc54: startup date [Thu Mar 14 15:47:26 CST 2019]; root of context hierarchy
+2019-03-14 15:47:29.581  INFO 6841 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2019-03-14 15:47:29.614  INFO 6841 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-14 15:47:29.615  INFO 6841 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-03-14 15:47:29.624  INFO 6841 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/opt/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2019-03-14 15:47:29.732  INFO 6841 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-14 15:47:29.733  INFO 6841 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3269 ms
+2019-03-14 15:47:29.830  INFO 6841 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-14 15:47:29.840  INFO 6841 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-14 15:47:29.841  INFO 6841 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-14 15:47:29.841  INFO 6841 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-14 15:47:29.841  INFO 6841 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-14 15:47:30.810  INFO 6841 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 15:47:31.022  INFO 6841 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eb7fc54: startup date [Thu Mar 14 15:47:26 CST 2019]; root of context hierarchy
+2019-03-14 15:47:31.116  INFO 6841 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.muteShop.App.home()
+2019-03-14 15:47:31.119  INFO 6841 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/item/create],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.ItemController.createItem(java.lang.String,java.lang.String,java.lang.Integer,java.math.BigDecimal,java.lang.String) throws com.muteShop.error.BusinessException
+2019-03-14 15:47:31.123  INFO 6841 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.login(java.lang.String,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 15:47:31.124  INFO 6841 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getotp],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getOtp(java.lang.String)
+2019-03-14 15:47:31.125  INFO 6841 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getUser(java.lang.Integer) throws com.muteShop.error.BusinessException
+2019-03-14 15:47:31.126  INFO 6841 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.register(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 15:47:31.130  INFO 6841 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-14 15:47:31.131  INFO 6841 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-14 15:47:31.160  INFO 6841 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Mapped URL path [/item] onto handler '/item'
+2019-03-14 15:47:31.170  INFO 6841 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 15:47:31.170  INFO 6841 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 15:47:31.505  INFO 6841 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-14 15:47:31.507  INFO 6841 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-03-14 15:47:31.514  INFO 6841 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-03-14 15:47:31.557  INFO 6841 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2019-03-14 15:47:31.562  INFO 6841 --- [main] com.muteShop.App                         : Started App in 6.569 seconds (JVM running for 7.356)
+2019-03-14 15:49:04.665  INFO 6841 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-03-14 15:49:04.665  INFO 6841 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-03-14 15:49:04.678  INFO 6841 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2019-03-14 15:49:04.803  INFO 6841 --- [http-nio-8090-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-03-14 15:49:05.304 DEBUG 6841 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.insertSelective     : ==>  Preparing: insert into item ( title, price, description, img_url ) values ( ?, ?, ?, ? ) 
+2019-03-14 15:49:05.341 DEBUG 6841 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.insertSelective     : ==> Parameters: IphoneX(String), 9999(BigDecimal), 苹果垃圾手机(String), https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3599169003,4237559019&fm=26&gp=0.jpg(String)
+2019-03-14 15:49:05.345 DEBUG 6841 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.insertSelective     : <==    Updates: 1
+2019-03-14 15:49:05.362 DEBUG 6841 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.insertSelective  : ==>  Preparing: insert into item_stock ( stock, item_id ) values ( ?, ? ) 
+2019-03-14 15:49:05.363 DEBUG 6841 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.insertSelective  : ==> Parameters: 100(Integer), 1(Integer)
+2019-03-14 15:49:05.364 DEBUG 6841 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.insertSelective  : <==    Updates: 1
+2019-03-14 15:49:05.366 DEBUG 6841 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==>  Preparing: select id, title, price, description, img_url from item where id = ? 
+2019-03-14 15:49:05.367 DEBUG 6841 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==> Parameters: 1(Integer)
+2019-03-14 15:49:05.380 DEBUG 6841 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.selectByPrimaryKey  : <==      Total: 1
+2019-03-14 15:49:05.383 DEBUG 6841 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.selectByItemId   : ==>  Preparing: select id, stock, item_id from item_stock where item_id = ? 
+2019-03-14 15:49:05.383 DEBUG 6841 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.selectByItemId   : ==> Parameters: 1(Integer)
+2019-03-14 15:49:05.385 DEBUG 6841 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.selectByItemId   : <==      Total: 1
+2019-03-14 15:57:58.789  INFO 6841 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eb7fc54: startup date [Thu Mar 14 15:47:26 CST 2019]; root of context hierarchy
+2019-03-14 15:57:58.791  INFO 6841 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-03-14 15:57:58.792  INFO 6841 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-03-14 15:57:58.803  INFO 6841 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-03-14 15:58:04.934 ERROR 7686 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: WARN  for 'com.project'
+2019-03-14 15:58:05.123  INFO 7686 --- [main] com.muteShop.App                         : Starting App on mute-PC with PID 7686 (/home/mute/IdeaProjects/shop/target/classes started by mute in /home/mute/IdeaProjects/shop)
+2019-03-14 15:58:05.125  INFO 7686 --- [main] com.muteShop.App                         : No active profile set, falling back to default profiles: default
+2019-03-14 15:58:05.286  INFO 7686 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@460d0a57: startup date [Thu Mar 14 15:58:05 CST 2019]; root of context hierarchy
+2019-03-14 15:58:07.856  INFO 7686 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2019-03-14 15:58:07.884  INFO 7686 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-14 15:58:07.884  INFO 7686 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-03-14 15:58:07.893  INFO 7686 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/opt/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2019-03-14 15:58:07.982  INFO 7686 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-14 15:58:07.982  INFO 7686 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2696 ms
+2019-03-14 15:58:08.047  INFO 7686 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-14 15:58:08.052  INFO 7686 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-14 15:58:08.052  INFO 7686 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-14 15:58:08.052  INFO 7686 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-14 15:58:08.053  INFO 7686 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-14 15:58:08.919  INFO 7686 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 15:58:09.144  INFO 7686 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@460d0a57: startup date [Thu Mar 14 15:58:05 CST 2019]; root of context hierarchy
+2019-03-14 15:58:09.242  INFO 7686 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.muteShop.App.home()
+2019-03-14 15:58:09.246  INFO 7686 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/item/create],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.ItemController.createItem(java.lang.String,java.lang.String,java.lang.Integer,java.math.BigDecimal,java.lang.String) throws com.muteShop.error.BusinessException
+2019-03-14 15:58:09.249  INFO 7686 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getotp],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getOtp(java.lang.String)
+2019-03-14 15:58:09.250  INFO 7686 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getUser(java.lang.Integer) throws com.muteShop.error.BusinessException
+2019-03-14 15:58:09.251  INFO 7686 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.login(java.lang.String,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 15:58:09.252  INFO 7686 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.register(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 15:58:09.256  INFO 7686 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-14 15:58:09.257  INFO 7686 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-14 15:58:09.279  INFO 7686 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Mapped URL path [/item] onto handler '/item'
+2019-03-14 15:58:09.292  INFO 7686 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 15:58:09.292  INFO 7686 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 15:58:09.612  INFO 7686 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-14 15:58:09.613  INFO 7686 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-03-14 15:58:09.621  INFO 7686 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-03-14 15:58:09.659  INFO 7686 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2019-03-14 15:58:09.663  INFO 7686 --- [main] com.muteShop.App                         : Started App in 5.279 seconds (JVM running for 6.098)
+2019-03-14 15:58:28.085  INFO 7686 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-03-14 15:58:28.085  INFO 7686 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-03-14 15:58:28.101  INFO 7686 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2019-03-14 15:58:28.246  INFO 7686 --- [http-nio-8090-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-03-14 15:58:28.817 DEBUG 7686 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.insertSelective     : ==>  Preparing: insert into item ( title, price, description, img_url ) values ( ?, ?, ?, ? ) 
+2019-03-14 15:58:28.856 DEBUG 7686 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.insertSelective     : ==> Parameters: IphoneX(String), 9999(BigDecimal), 苹果垃圾手机(String), https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3599169003,4237559019&fm=26&gp=0.jpg(String)
+2019-03-14 15:58:28.860 DEBUG 7686 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.insertSelective     : <==    Updates: 1
+2019-03-14 15:58:28.879 DEBUG 7686 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.insertSelective  : ==>  Preparing: insert into item_stock ( stock, item_id ) values ( ?, ? ) 
+2019-03-14 15:58:28.879 DEBUG 7686 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.insertSelective  : ==> Parameters: 100(Integer), 2(Integer)
+2019-03-14 15:58:28.881 DEBUG 7686 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.insertSelective  : <==    Updates: 1
+2019-03-14 15:58:28.882 DEBUG 7686 --- [http-nio-8090-exec-1] c.m.d.ItemSalesDOMapper.insertSelective  : ==>  Preparing: insert into item_sales ( sales, item_id ) values ( ?, ? ) 
+2019-03-14 15:58:28.882 DEBUG 7686 --- [http-nio-8090-exec-1] c.m.d.ItemSalesDOMapper.insertSelective  : ==> Parameters: 0(Integer), 2(Integer)
+2019-03-14 15:58:28.884 DEBUG 7686 --- [http-nio-8090-exec-1] c.m.d.ItemSalesDOMapper.insertSelective  : <==    Updates: 1
+2019-03-14 15:58:28.886 DEBUG 7686 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==>  Preparing: select id, title, price, description, img_url from item where id = ? 
+2019-03-14 15:58:28.887 DEBUG 7686 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==> Parameters: 2(Integer)
+2019-03-14 15:58:28.900 DEBUG 7686 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.selectByPrimaryKey  : <==      Total: 1
+2019-03-14 15:58:28.903 DEBUG 7686 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.selectByItemId   : ==>  Preparing: select id, stock, item_id from item_stock where item_id = ? 
+2019-03-14 15:58:28.903 DEBUG 7686 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.selectByItemId   : ==> Parameters: 2(Integer)
+2019-03-14 15:58:28.905 DEBUG 7686 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.selectByItemId   : <==      Total: 1
+2019-03-14 16:41:54.437 ERROR 5895 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: WARN  for 'com.project'
+2019-03-14 16:41:55.017  INFO 5895 --- [main] com.muteShop.App                         : Starting App on mute-PC with PID 5895 (/home/mute/IdeaProjects/shop/target/classes started by mute in /home/mute/IdeaProjects/shop)
+2019-03-14 16:41:55.022  INFO 5895 --- [main] com.muteShop.App                         : No active profile set, falling back to default profiles: default
+2019-03-14 16:41:55.246  INFO 5895 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@69b2283a: startup date [Thu Mar 14 16:41:55 CST 2019]; root of context hierarchy
+2019-03-14 16:41:58.028  INFO 5895 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2019-03-14 16:41:58.088  INFO 5895 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-14 16:41:58.089  INFO 5895 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-03-14 16:41:58.099  INFO 5895 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/opt/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2019-03-14 16:41:58.243  INFO 5895 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-14 16:41:58.244  INFO 5895 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3004 ms
+2019-03-14 16:41:58.354  INFO 5895 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-14 16:41:58.360  INFO 5895 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-14 16:41:58.365  INFO 5895 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-14 16:41:58.368  INFO 5895 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-14 16:41:58.368  INFO 5895 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-14 16:42:00.610  INFO 5895 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 16:42:01.019  INFO 5895 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@69b2283a: startup date [Thu Mar 14 16:41:55 CST 2019]; root of context hierarchy
+2019-03-14 16:42:01.221  INFO 5895 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.muteShop.App.home()
+2019-03-14 16:42:01.225  INFO 5895 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/item/get],methods=[GET],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.ItemController.getItem(java.lang.Integer)
+2019-03-14 16:42:01.232  INFO 5895 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/item/create],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.ItemController.createItem(java.lang.String,java.lang.String,java.lang.Integer,java.math.BigDecimal,java.lang.String) throws com.muteShop.error.BusinessException
+2019-03-14 16:42:01.234  INFO 5895 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.login(java.lang.String,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 16:42:01.237  INFO 5895 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getotp],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getOtp(java.lang.String)
+2019-03-14 16:42:01.238  INFO 5895 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getUser(java.lang.Integer) throws com.muteShop.error.BusinessException
+2019-03-14 16:42:01.249  INFO 5895 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.register(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 16:42:01.265  INFO 5895 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-14 16:42:01.265  INFO 5895 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-14 16:42:01.339  INFO 5895 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Mapped URL path [/item] onto handler '/item'
+2019-03-14 16:42:01.378  INFO 5895 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 16:42:01.378  INFO 5895 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 16:42:01.918  INFO 5895 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-14 16:42:01.920  INFO 5895 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-03-14 16:42:01.927  INFO 5895 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-03-14 16:42:01.994  INFO 5895 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2019-03-14 16:42:02.002  INFO 5895 --- [main] com.muteShop.App                         : Started App in 8.804 seconds (JVM running for 10.664)
+2019-03-14 16:42:11.703  INFO 5895 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@69b2283a: startup date [Thu Mar 14 16:41:55 CST 2019]; root of context hierarchy
+2019-03-14 16:42:11.705  INFO 5895 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-03-14 16:42:11.706  INFO 5895 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-03-14 16:42:34.143 ERROR 6156 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: WARN  for 'com.project'
+2019-03-14 16:42:34.302  INFO 6156 --- [main] com.muteShop.App                         : Starting App on mute-PC with PID 6156 (/home/mute/IdeaProjects/shop/target/classes started by mute in /home/mute/IdeaProjects/shop)
+2019-03-14 16:42:34.303  INFO 6156 --- [main] com.muteShop.App                         : No active profile set, falling back to default profiles: default
+2019-03-14 16:42:34.462  INFO 6156 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78b66d36: startup date [Thu Mar 14 16:42:34 CST 2019]; root of context hierarchy
+2019-03-14 16:42:37.151  INFO 6156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2019-03-14 16:42:37.184  INFO 6156 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-14 16:42:37.185  INFO 6156 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-03-14 16:42:37.196  INFO 6156 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/opt/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2019-03-14 16:42:37.291  INFO 6156 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-14 16:42:37.292  INFO 6156 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2831 ms
+2019-03-14 16:42:37.353  INFO 6156 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-14 16:42:37.358  INFO 6156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-14 16:42:37.358  INFO 6156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-14 16:42:37.358  INFO 6156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-14 16:42:37.358  INFO 6156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-14 16:42:38.194  INFO 6156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 16:42:38.386  INFO 6156 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78b66d36: startup date [Thu Mar 14 16:42:34 CST 2019]; root of context hierarchy
+2019-03-14 16:42:38.466  INFO 6156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.muteShop.App.home()
+2019-03-14 16:42:38.469  INFO 6156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/item/get],methods=[GET]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.ItemController.getItem(java.lang.Integer)
+2019-03-14 16:42:38.471  INFO 6156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/item/create],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.ItemController.createItem(java.lang.String,java.lang.String,java.lang.Integer,java.math.BigDecimal,java.lang.String) throws com.muteShop.error.BusinessException
+2019-03-14 16:42:38.474  INFO 6156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.login(java.lang.String,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 16:42:38.475  INFO 6156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getotp],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getOtp(java.lang.String)
+2019-03-14 16:42:38.475  INFO 6156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getUser(java.lang.Integer) throws com.muteShop.error.BusinessException
+2019-03-14 16:42:38.477  INFO 6156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.register(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 16:42:38.484  INFO 6156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-14 16:42:38.485  INFO 6156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-14 16:42:38.517  INFO 6156 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Mapped URL path [/item] onto handler '/item'
+2019-03-14 16:42:38.527  INFO 6156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 16:42:38.527  INFO 6156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 16:42:38.860  INFO 6156 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-14 16:42:38.862  INFO 6156 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-03-14 16:42:38.869  INFO 6156 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-03-14 16:42:38.910  INFO 6156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2019-03-14 16:42:38.914  INFO 6156 --- [main] com.muteShop.App                         : Started App in 5.23 seconds (JVM running for 5.899)
+2019-03-14 16:45:25.052  INFO 6156 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-03-14 16:45:25.052  INFO 6156 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-03-14 16:45:25.067  INFO 6156 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2019-03-14 16:45:25.189  INFO 6156 --- [http-nio-8090-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-03-14 16:45:25.531 DEBUG 6156 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==>  Preparing: select id, title, price, description, img_url from item where id = ? 
+2019-03-14 16:45:25.556 DEBUG 6156 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==> Parameters: 2(Integer)
+2019-03-14 16:45:25.581 DEBUG 6156 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.selectByPrimaryKey  : <==      Total: 1
+2019-03-14 16:45:25.585 DEBUG 6156 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.selectByItemId   : ==>  Preparing: select id, stock, item_id from item_stock where item_id = ? 
+2019-03-14 16:45:25.586 DEBUG 6156 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.selectByItemId   : ==> Parameters: 2(Integer)
+2019-03-14 16:45:25.588 DEBUG 6156 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.selectByItemId   : <==      Total: 1
+2019-03-14 16:46:12.338 DEBUG 6156 --- [http-nio-8090-exec-3] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==>  Preparing: select id, title, price, description, img_url from item where id = ? 
+2019-03-14 16:46:12.339 DEBUG 6156 --- [http-nio-8090-exec-3] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==> Parameters: 2(Integer)
+2019-03-14 16:46:12.343 DEBUG 6156 --- [http-nio-8090-exec-3] c.m.dao.ItemDOMapper.selectByPrimaryKey  : <==      Total: 1
+2019-03-14 16:46:12.344 DEBUG 6156 --- [http-nio-8090-exec-3] c.m.d.ItemStockDOMapper.selectByItemId   : ==>  Preparing: select id, stock, item_id from item_stock where item_id = ? 
+2019-03-14 16:46:12.345 DEBUG 6156 --- [http-nio-8090-exec-3] c.m.d.ItemStockDOMapper.selectByItemId   : ==> Parameters: 2(Integer)
+2019-03-14 16:46:12.348 DEBUG 6156 --- [http-nio-8090-exec-3] c.m.d.ItemStockDOMapper.selectByItemId   : <==      Total: 1
+2019-03-14 16:47:41.736  INFO 6156 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78b66d36: startup date [Thu Mar 14 16:42:34 CST 2019]; root of context hierarchy
+2019-03-14 16:47:41.742  INFO 6156 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-03-14 16:47:41.743  INFO 6156 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-03-14 16:47:41.760  INFO 6156 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-03-14 16:47:46.890 ERROR 6632 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: WARN  for 'com.project'
+2019-03-14 16:47:47.056  INFO 6632 --- [main] com.muteShop.App                         : Starting App on mute-PC with PID 6632 (/home/mute/IdeaProjects/shop/target/classes started by mute in /home/mute/IdeaProjects/shop)
+2019-03-14 16:47:47.058  INFO 6632 --- [main] com.muteShop.App                         : No active profile set, falling back to default profiles: default
+2019-03-14 16:47:47.290  INFO 6632 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@480d3575: startup date [Thu Mar 14 16:47:47 CST 2019]; root of context hierarchy
+2019-03-14 16:47:49.440  INFO 6632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2019-03-14 16:47:49.484  INFO 6632 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-14 16:47:49.485  INFO 6632 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-03-14 16:47:49.508  INFO 6632 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/opt/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2019-03-14 16:47:49.628  INFO 6632 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-14 16:47:49.629  INFO 6632 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2338 ms
+2019-03-14 16:47:49.727  INFO 6632 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-14 16:47:49.733  INFO 6632 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-14 16:47:49.734  INFO 6632 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-14 16:47:49.734  INFO 6632 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-14 16:47:49.734  INFO 6632 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-14 16:47:50.602  INFO 6632 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 16:47:50.816  INFO 6632 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@480d3575: startup date [Thu Mar 14 16:47:47 CST 2019]; root of context hierarchy
+2019-03-14 16:47:50.944  INFO 6632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.muteShop.App.home()
+2019-03-14 16:47:50.950  INFO 6632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/item/get],methods=[GET]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.ItemController.getItem(java.lang.Integer)
+2019-03-14 16:47:50.953  INFO 6632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/item/create],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.ItemController.createItem(java.lang.String,java.lang.String,java.lang.Integer,java.math.BigDecimal,java.lang.String) throws com.muteShop.error.BusinessException
+2019-03-14 16:47:50.955  INFO 6632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getotp],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getOtp(java.lang.String)
+2019-03-14 16:47:50.956  INFO 6632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getUser(java.lang.Integer) throws com.muteShop.error.BusinessException
+2019-03-14 16:47:50.957  INFO 6632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.login(java.lang.String,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 16:47:50.958  INFO 6632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.register(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 16:47:50.965  INFO 6632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-14 16:47:50.966  INFO 6632 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-14 16:47:50.999  INFO 6632 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Mapped URL path [/item] onto handler '/item'
+2019-03-14 16:47:51.010  INFO 6632 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 16:47:51.010  INFO 6632 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 16:47:51.376  INFO 6632 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-14 16:47:51.378  INFO 6632 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-03-14 16:47:51.386  INFO 6632 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-03-14 16:47:51.432  INFO 6632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2019-03-14 16:47:51.438  INFO 6632 --- [main] com.muteShop.App                         : Started App in 5.355 seconds (JVM running for 7.272)
+2019-03-14 16:48:08.133  INFO 6632 --- [http-nio-8090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-03-14 16:48:08.133  INFO 6632 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-03-14 16:48:08.154  INFO 6632 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2019-03-14 16:48:24.298  INFO 6632 --- [http-nio-8090-exec-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-03-14 16:48:24.696 DEBUG 6632 --- [http-nio-8090-exec-2] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==>  Preparing: select id, title, price, description, img_url from item where id = ? 
+2019-03-14 16:48:24.973 DEBUG 6632 --- [http-nio-8090-exec-2] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==> Parameters: 2(Integer)
+2019-03-14 16:48:25.215 DEBUG 6632 --- [http-nio-8090-exec-2] c.m.dao.ItemDOMapper.selectByPrimaryKey  : <==      Total: 1
+2019-03-14 16:48:25.221 DEBUG 6632 --- [http-nio-8090-exec-2] c.m.d.ItemStockDOMapper.selectByItemId   : ==>  Preparing: select id, stock, item_id from item_stock where item_id = ? 
+2019-03-14 16:48:25.223 DEBUG 6632 --- [http-nio-8090-exec-2] c.m.d.ItemStockDOMapper.selectByItemId   : ==> Parameters: 2(Integer)
+2019-03-14 16:48:25.231 DEBUG 6632 --- [http-nio-8090-exec-2] c.m.d.ItemStockDOMapper.selectByItemId   : <==      Total: 1
+2019-03-14 16:49:23.277  INFO 6632 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@480d3575: startup date [Thu Mar 14 16:47:47 CST 2019]; root of context hierarchy
+2019-03-14 16:49:23.281  INFO 6632 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-03-14 16:49:23.282  INFO 6632 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-03-14 16:49:23.297  INFO 6632 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-03-14 16:49:27.031 ERROR 6756 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: WARN  for 'com.project'
+2019-03-14 16:49:27.218  INFO 6756 --- [main] com.muteShop.App                         : Starting App on mute-PC with PID 6756 (/home/mute/IdeaProjects/shop/target/classes started by mute in /home/mute/IdeaProjects/shop)
+2019-03-14 16:49:27.219  INFO 6756 --- [main] com.muteShop.App                         : No active profile set, falling back to default profiles: default
+2019-03-14 16:49:27.437  INFO 6756 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4ddced80: startup date [Thu Mar 14 16:49:27 CST 2019]; root of context hierarchy
+2019-03-14 16:49:29.821  INFO 6756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2019-03-14 16:49:29.854  INFO 6756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-14 16:49:29.854  INFO 6756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-03-14 16:49:29.865  INFO 6756 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/opt/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2019-03-14 16:49:29.951  INFO 6756 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-14 16:49:29.952  INFO 6756 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2515 ms
+2019-03-14 16:49:30.015  INFO 6756 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-14 16:49:30.020  INFO 6756 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-14 16:49:30.021  INFO 6756 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-14 16:49:30.021  INFO 6756 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-14 16:49:30.021  INFO 6756 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-14 16:49:30.893  INFO 6756 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 16:49:31.167  INFO 6756 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4ddced80: startup date [Thu Mar 14 16:49:27 CST 2019]; root of context hierarchy
+2019-03-14 16:49:31.237  INFO 6756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.muteShop.App.home()
+2019-03-14 16:49:31.240  INFO 6756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/item/get],methods=[GET]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.ItemController.getItem(java.lang.Integer)
+2019-03-14 16:49:31.242  INFO 6756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/item/create],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.ItemController.createItem(java.lang.String,java.lang.String,java.lang.Integer,java.math.BigDecimal,java.lang.String) throws com.muteShop.error.BusinessException
+2019-03-14 16:49:31.245  INFO 6756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.login(java.lang.String,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 16:49:31.245  INFO 6756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getotp],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getOtp(java.lang.String)
+2019-03-14 16:49:31.246  INFO 6756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getUser(java.lang.Integer) throws com.muteShop.error.BusinessException
+2019-03-14 16:49:31.247  INFO 6756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.register(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 16:49:31.253  INFO 6756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-14 16:49:31.253  INFO 6756 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-14 16:49:31.276  INFO 6756 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Mapped URL path [/item] onto handler '/item'
+2019-03-14 16:49:31.285  INFO 6756 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 16:49:31.285  INFO 6756 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 16:49:31.615  INFO 6756 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-14 16:49:31.617  INFO 6756 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-03-14 16:49:31.623  INFO 6756 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-03-14 16:49:31.661  INFO 6756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2019-03-14 16:49:31.665  INFO 6756 --- [main] com.muteShop.App                         : Started App in 5.089 seconds (JVM running for 5.711)
+2019-03-14 16:49:51.324  INFO 6756 --- [http-nio-8090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-03-14 16:49:51.324  INFO 6756 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-03-14 16:49:51.350  INFO 6756 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2019-03-14 16:49:51.518  INFO 6756 --- [http-nio-8090-exec-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-03-14 16:49:51.952 DEBUG 6756 --- [http-nio-8090-exec-2] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==>  Preparing: select id, title, price, description, img_url from item where id = ? 
+2019-03-14 16:49:51.988 DEBUG 6756 --- [http-nio-8090-exec-2] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==> Parameters: 2(Integer)
+2019-03-14 16:49:52.025 DEBUG 6756 --- [http-nio-8090-exec-2] c.m.dao.ItemDOMapper.selectByPrimaryKey  : <==      Total: 1
+2019-03-14 16:49:52.029 DEBUG 6756 --- [http-nio-8090-exec-2] c.m.d.ItemStockDOMapper.selectByItemId   : ==>  Preparing: select id, stock, item_id from item_stock where item_id = ? 
+2019-03-14 16:49:52.030 DEBUG 6756 --- [http-nio-8090-exec-2] c.m.d.ItemStockDOMapper.selectByItemId   : ==> Parameters: 2(Integer)
+2019-03-14 16:49:52.031 DEBUG 6756 --- [http-nio-8090-exec-2] c.m.d.ItemStockDOMapper.selectByItemId   : <==      Total: 1
+2019-03-14 16:59:36.925  INFO 6756 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4ddced80: startup date [Thu Mar 14 16:49:27 CST 2019]; root of context hierarchy
+2019-03-14 16:59:36.927  INFO 6756 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-03-14 16:59:36.930  INFO 6756 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-03-14 16:59:36.937  INFO 6756 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-03-14 17:13:18.352 ERROR 10561 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: WARN  for 'com.project'
+2019-03-14 17:13:18.498  INFO 10561 --- [main] com.muteShop.App                         : Starting App on mute-PC with PID 10561 (/home/mute/IdeaProjects/shop/target/classes started by mute in /home/mute/IdeaProjects/shop)
+2019-03-14 17:13:18.501  INFO 10561 --- [main] com.muteShop.App                         : No active profile set, falling back to default profiles: default
+2019-03-14 17:13:18.682  INFO 10561 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5223e5ee: startup date [Thu Mar 14 17:13:18 CST 2019]; root of context hierarchy
+2019-03-14 17:13:20.971  INFO 10561 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2019-03-14 17:13:21.011  INFO 10561 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-14 17:13:21.011  INFO 10561 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-03-14 17:13:21.023  INFO 10561 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/opt/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2019-03-14 17:13:21.127  INFO 10561 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-14 17:13:21.127  INFO 10561 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2445 ms
+2019-03-14 17:13:21.196  INFO 10561 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-14 17:13:21.199  INFO 10561 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-14 17:13:21.200  INFO 10561 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-14 17:13:21.200  INFO 10561 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-14 17:13:21.200  INFO 10561 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-14 17:13:22.015  INFO 10561 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 17:13:22.245  INFO 10561 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5223e5ee: startup date [Thu Mar 14 17:13:18 CST 2019]; root of context hierarchy
+2019-03-14 17:13:22.333  INFO 10561 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.muteShop.App.home()
+2019-03-14 17:13:22.336  INFO 10561 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/item/get],methods=[GET]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.ItemController.getItem(java.lang.Integer)
+2019-03-14 17:13:22.339  INFO 10561 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/item/create],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.ItemController.createItem(java.lang.String,java.lang.String,java.lang.Integer,java.math.BigDecimal,java.lang.String) throws com.muteShop.error.BusinessException
+2019-03-14 17:13:22.341  INFO 10561 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.login(java.lang.String,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 17:13:22.342  INFO 10561 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getotp],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getOtp(java.lang.String)
+2019-03-14 17:13:22.343  INFO 10561 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getUser(java.lang.Integer) throws com.muteShop.error.BusinessException
+2019-03-14 17:13:22.344  INFO 10561 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.register(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 17:13:22.350  INFO 10561 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-14 17:13:22.351  INFO 10561 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-14 17:13:22.374  INFO 10561 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Mapped URL path [/item] onto handler '/item'
+2019-03-14 17:13:22.384  INFO 10561 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 17:13:22.384  INFO 10561 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 17:13:22.703  INFO 10561 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-14 17:13:22.706  INFO 10561 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-03-14 17:13:22.712  INFO 10561 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-03-14 17:13:22.754  INFO 10561 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2019-03-14 17:13:22.759  INFO 10561 --- [main] com.muteShop.App                         : Started App in 4.83 seconds (JVM running for 5.354)
+2019-03-14 17:17:43.104  INFO 10561 --- [http-nio-8090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-03-14 17:17:43.105  INFO 10561 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-03-14 17:17:43.125  INFO 10561 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2019-03-14 17:17:43.269  INFO 10561 --- [http-nio-8090-exec-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-03-14 17:17:43.715 DEBUG 10561 --- [http-nio-8090-exec-2] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==>  Preparing: select id, title, price, description, img_url from item where id = ? 
+2019-03-14 17:17:43.749 DEBUG 10561 --- [http-nio-8090-exec-2] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==> Parameters: 2(Integer)
+2019-03-14 17:17:43.788 DEBUG 10561 --- [http-nio-8090-exec-2] c.m.dao.ItemDOMapper.selectByPrimaryKey  : <==      Total: 1
+2019-03-14 17:17:43.792 DEBUG 10561 --- [http-nio-8090-exec-2] c.m.d.ItemStockDOMapper.selectByItemId   : ==>  Preparing: select id, stock, item_id from item_stock where item_id = ? 
+2019-03-14 17:17:43.793 DEBUG 10561 --- [http-nio-8090-exec-2] c.m.d.ItemStockDOMapper.selectByItemId   : ==> Parameters: 2(Integer)
+2019-03-14 17:17:43.795 DEBUG 10561 --- [http-nio-8090-exec-2] c.m.d.ItemStockDOMapper.selectByItemId   : <==      Total: 1
+2019-03-14 17:17:43.800 DEBUG 10561 --- [http-nio-8090-exec-2] c.m.d.I.selectItemSalesDOByItemId        : ==>  Preparing: select id, sales, item_id from item_sales where item_id = ? 
+2019-03-14 17:17:43.800 DEBUG 10561 --- [http-nio-8090-exec-2] c.m.d.I.selectItemSalesDOByItemId        : ==> Parameters: 2(Integer)
+2019-03-14 17:17:43.802 DEBUG 10561 --- [http-nio-8090-exec-2] c.m.d.I.selectItemSalesDOByItemId        : <==      Total: 1
+2019-03-14 17:18:38.048  INFO 10561 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5223e5ee: startup date [Thu Mar 14 17:13:18 CST 2019]; root of context hierarchy
+2019-03-14 17:18:38.050  INFO 10561 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-03-14 17:18:38.051  INFO 10561 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-03-14 17:18:38.057  INFO 10561 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-03-14 17:18:41.481 ERROR 10851 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: WARN  for 'com.project'
+2019-03-14 17:18:41.816  INFO 10851 --- [main] com.muteShop.App                         : Starting App on mute-PC with PID 10851 (/home/mute/IdeaProjects/shop/target/classes started by mute in /home/mute/IdeaProjects/shop)
+2019-03-14 17:18:41.818  INFO 10851 --- [main] com.muteShop.App                         : No active profile set, falling back to default profiles: default
+2019-03-14 17:18:41.995  INFO 10851 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eb91815: startup date [Thu Mar 14 17:18:41 CST 2019]; root of context hierarchy
+2019-03-14 17:18:44.089  INFO 10851 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2019-03-14 17:18:44.121  INFO 10851 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-14 17:18:44.121  INFO 10851 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-03-14 17:18:44.136  INFO 10851 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/opt/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2019-03-14 17:18:44.237  INFO 10851 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-14 17:18:44.237  INFO 10851 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2242 ms
+2019-03-14 17:18:44.328  INFO 10851 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-14 17:18:44.334  INFO 10851 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-14 17:18:44.335  INFO 10851 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-14 17:18:44.335  INFO 10851 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-14 17:18:44.335  INFO 10851 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-14 17:18:45.258  INFO 10851 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 17:18:45.536  INFO 10851 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eb91815: startup date [Thu Mar 14 17:18:41 CST 2019]; root of context hierarchy
+2019-03-14 17:18:45.633  INFO 10851 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.muteShop.App.home()
+2019-03-14 17:18:45.636  INFO 10851 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/item/get],methods=[GET]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.ItemController.getItem(java.lang.Integer)
+2019-03-14 17:18:45.639  INFO 10851 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/item/create],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.ItemController.createItem(java.lang.String,java.lang.String,java.lang.Integer,java.math.BigDecimal,java.lang.String) throws com.muteShop.error.BusinessException
+2019-03-14 17:18:45.641  INFO 10851 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.login(java.lang.String,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 17:18:45.642  INFO 10851 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getotp],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getOtp(java.lang.String)
+2019-03-14 17:18:45.643  INFO 10851 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getUser(java.lang.Integer) throws com.muteShop.error.BusinessException
+2019-03-14 17:18:45.644  INFO 10851 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.register(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 17:18:45.651  INFO 10851 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-14 17:18:45.652  INFO 10851 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-14 17:18:45.687  INFO 10851 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Mapped URL path [/item] onto handler '/item'
+2019-03-14 17:18:45.697  INFO 10851 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 17:18:45.697  INFO 10851 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 17:18:46.014  INFO 10851 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-14 17:18:46.016  INFO 10851 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-03-14 17:18:46.023  INFO 10851 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-03-14 17:18:46.069  INFO 10851 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2019-03-14 17:18:46.076  INFO 10851 --- [main] com.muteShop.App                         : Started App in 5.34 seconds (JVM running for 6.404)
+2019-03-14 17:19:02.141  INFO 10851 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-03-14 17:19:02.141  INFO 10851 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-03-14 17:19:02.159  INFO 10851 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2019-03-14 17:19:02.332  INFO 10851 --- [http-nio-8090-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-03-14 17:19:02.761 DEBUG 10851 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==>  Preparing: select id, title, price, description, img_url from item where id = ? 
+2019-03-14 17:19:02.790 DEBUG 10851 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==> Parameters: 2(Integer)
+2019-03-14 17:19:02.821 DEBUG 10851 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.selectByPrimaryKey  : <==      Total: 1
+2019-03-14 17:19:02.824 DEBUG 10851 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.selectByItemId   : ==>  Preparing: select id, stock, item_id from item_stock where item_id = ? 
+2019-03-14 17:19:02.824 DEBUG 10851 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.selectByItemId   : ==> Parameters: 2(Integer)
+2019-03-14 17:19:02.826 DEBUG 10851 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.selectByItemId   : <==      Total: 1
+2019-03-14 17:19:10.960 DEBUG 10851 --- [http-nio-8090-exec-1] c.m.d.I.selectItemSalesDOByItemId        : ==>  Preparing: select id, sales, item_id from item_sales where item_id = ? 
+2019-03-14 17:19:10.962 DEBUG 10851 --- [http-nio-8090-exec-1] c.m.d.I.selectItemSalesDOByItemId        : ==> Parameters: 2(Integer)
+2019-03-14 17:19:10.973 DEBUG 10851 --- [http-nio-8090-exec-1] c.m.d.I.selectItemSalesDOByItemId        : <==      Total: 1
+2019-03-14 17:20:48.985  INFO 10851 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3eb91815: startup date [Thu Mar 14 17:18:41 CST 2019]; root of context hierarchy
+2019-03-14 17:20:48.989  INFO 10851 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-03-14 17:20:48.992  INFO 10851 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-03-14 17:20:49.008  INFO 10851 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-03-14 17:20:52.695 ERROR 11049 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: WARN  for 'com.project'
+2019-03-14 17:20:53.024  INFO 11049 --- [main] com.muteShop.App                         : Starting App on mute-PC with PID 11049 (/home/mute/IdeaProjects/shop/target/classes started by mute in /home/mute/IdeaProjects/shop)
+2019-03-14 17:20:53.033  INFO 11049 --- [main] com.muteShop.App                         : No active profile set, falling back to default profiles: default
+2019-03-14 17:20:53.162  INFO 11049 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10e92f8f: startup date [Thu Mar 14 17:20:53 CST 2019]; root of context hierarchy
+2019-03-14 17:20:55.197  INFO 11049 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2019-03-14 17:20:55.224  INFO 11049 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-14 17:20:55.224  INFO 11049 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-03-14 17:20:55.233  INFO 11049 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/opt/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2019-03-14 17:20:55.322  INFO 11049 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-14 17:20:55.322  INFO 11049 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2160 ms
+2019-03-14 17:20:55.377  INFO 11049 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-14 17:20:55.383  INFO 11049 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-14 17:20:55.383  INFO 11049 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-14 17:20:55.384  INFO 11049 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-14 17:20:55.384  INFO 11049 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-14 17:20:56.182  INFO 11049 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 17:20:56.371  INFO 11049 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10e92f8f: startup date [Thu Mar 14 17:20:53 CST 2019]; root of context hierarchy
+2019-03-14 17:20:56.465  INFO 11049 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.muteShop.App.home()
+2019-03-14 17:20:56.468  INFO 11049 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/item/get],methods=[GET]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.ItemController.getItem(java.lang.Integer)
+2019-03-14 17:20:56.471  INFO 11049 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/item/create],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.ItemController.createItem(java.lang.String,java.lang.String,java.lang.Integer,java.math.BigDecimal,java.lang.String) throws com.muteShop.error.BusinessException
+2019-03-14 17:20:56.473  INFO 11049 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.login(java.lang.String,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 17:20:56.474  INFO 11049 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getotp],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getOtp(java.lang.String)
+2019-03-14 17:20:56.474  INFO 11049 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getUser(java.lang.Integer) throws com.muteShop.error.BusinessException
+2019-03-14 17:20:56.476  INFO 11049 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.register(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 17:20:56.482  INFO 11049 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-14 17:20:56.482  INFO 11049 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-14 17:20:56.503  INFO 11049 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Mapped URL path [/item] onto handler '/item'
+2019-03-14 17:20:56.511  INFO 11049 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 17:20:56.511  INFO 11049 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 17:20:56.816  INFO 11049 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-14 17:20:56.818  INFO 11049 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-03-14 17:20:56.826  INFO 11049 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-03-14 17:20:56.872  INFO 11049 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2019-03-14 17:20:56.881  INFO 11049 --- [main] com.muteShop.App                         : Started App in 4.69 seconds (JVM running for 5.347)
+2019-03-14 17:21:21.261  INFO 11049 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-03-14 17:21:21.261  INFO 11049 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-03-14 17:21:21.280  INFO 11049 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2019-03-14 17:21:21.418  INFO 11049 --- [http-nio-8090-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-03-14 17:21:21.812 DEBUG 11049 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==>  Preparing: select id, title, price, description, img_url from item where id = ? 
+2019-03-14 17:21:21.847 DEBUG 11049 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==> Parameters: 2(Integer)
+2019-03-14 17:21:21.890 DEBUG 11049 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.selectByPrimaryKey  : <==      Total: 1
+2019-03-14 17:21:21.894 DEBUG 11049 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.selectByItemId   : ==>  Preparing: select id, stock, item_id from item_stock where item_id = ? 
+2019-03-14 17:21:21.894 DEBUG 11049 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.selectByItemId   : ==> Parameters: 2(Integer)
+2019-03-14 17:21:21.896 DEBUG 11049 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.selectByItemId   : <==      Total: 1
+2019-03-14 17:21:21.900 DEBUG 11049 --- [http-nio-8090-exec-1] c.m.d.I.selectItemSalesDOByItemId        : ==>  Preparing: select id, sales, item_id from item_sales where item_id = ? 
+2019-03-14 17:21:21.900 DEBUG 11049 --- [http-nio-8090-exec-1] c.m.d.I.selectItemSalesDOByItemId        : ==> Parameters: 2(Integer)
+2019-03-14 17:21:21.902 DEBUG 11049 --- [http-nio-8090-exec-1] c.m.d.I.selectItemSalesDOByItemId        : <==      Total: 1
+2019-03-14 17:22:40.063  INFO 11049 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@10e92f8f: startup date [Thu Mar 14 17:20:53 CST 2019]; root of context hierarchy
+2019-03-14 17:22:40.065  INFO 11049 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-03-14 17:22:40.066  INFO 11049 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-03-14 17:22:40.072  INFO 11049 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-03-14 17:22:47.428 ERROR 11170 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: WARN  for 'com.project'
+2019-03-14 17:22:47.677  INFO 11170 --- [main] com.muteShop.App                         : Starting App on mute-PC with PID 11170 (/home/mute/IdeaProjects/shop/target/classes started by mute in /home/mute/IdeaProjects/shop)
+2019-03-14 17:22:47.684  INFO 11170 --- [main] com.muteShop.App                         : No active profile set, falling back to default profiles: default
+2019-03-14 17:22:47.838  INFO 11170 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@ef9296d: startup date [Thu Mar 14 17:22:47 CST 2019]; root of context hierarchy
+2019-03-14 17:22:50.422  INFO 11170 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2019-03-14 17:22:50.454  INFO 11170 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-14 17:22:50.454  INFO 11170 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-03-14 17:22:50.466  INFO 11170 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/opt/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2019-03-14 17:22:50.562  INFO 11170 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-14 17:22:50.563  INFO 11170 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2725 ms
+2019-03-14 17:22:50.630  INFO 11170 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-14 17:22:50.640  INFO 11170 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-14 17:22:50.641  INFO 11170 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-14 17:22:50.641  INFO 11170 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-14 17:22:50.641  INFO 11170 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-14 17:22:51.413  INFO 11170 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 17:22:51.633  INFO 11170 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@ef9296d: startup date [Thu Mar 14 17:22:47 CST 2019]; root of context hierarchy
+2019-03-14 17:22:51.713  INFO 11170 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.muteShop.App.home()
+2019-03-14 17:22:51.716  INFO 11170 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/item/get],methods=[GET]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.ItemController.getItem(java.lang.Integer)
+2019-03-14 17:22:51.719  INFO 11170 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/item/create],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.ItemController.createItem(java.lang.String,java.lang.String,java.lang.Integer,java.math.BigDecimal,java.lang.String) throws com.muteShop.error.BusinessException
+2019-03-14 17:22:51.721  INFO 11170 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.login(java.lang.String,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 17:22:51.722  INFO 11170 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getotp],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getOtp(java.lang.String)
+2019-03-14 17:22:51.723  INFO 11170 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getUser(java.lang.Integer) throws com.muteShop.error.BusinessException
+2019-03-14 17:22:51.724  INFO 11170 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.register(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 17:22:51.730  INFO 11170 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-14 17:22:51.730  INFO 11170 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-14 17:22:51.754  INFO 11170 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Mapped URL path [/item] onto handler '/item'
+2019-03-14 17:22:51.763  INFO 11170 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 17:22:51.763  INFO 11170 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 17:22:52.157  INFO 11170 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-14 17:22:52.159  INFO 11170 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-03-14 17:22:52.166  INFO 11170 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-03-14 17:22:52.208  INFO 11170 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2019-03-14 17:22:52.212  INFO 11170 --- [main] com.muteShop.App                         : Started App in 5.222 seconds (JVM running for 5.731)
+2019-03-14 17:23:26.478  INFO 11170 --- [http-nio-8090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-03-14 17:23:26.478  INFO 11170 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-03-14 17:23:26.497  INFO 11170 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2019-03-14 17:23:26.612  INFO 11170 --- [http-nio-8090-exec-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-03-14 17:23:26.887 DEBUG 11170 --- [http-nio-8090-exec-2] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==>  Preparing: select id, title, price, description, img_url from item where id = ? 
+2019-03-14 17:23:26.919 DEBUG 11170 --- [http-nio-8090-exec-2] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==> Parameters: 2(Integer)
+2019-03-14 17:23:26.971 DEBUG 11170 --- [http-nio-8090-exec-2] c.m.dao.ItemDOMapper.selectByPrimaryKey  : <==      Total: 1
+2019-03-14 17:23:26.975 DEBUG 11170 --- [http-nio-8090-exec-2] c.m.d.ItemStockDOMapper.selectByItemId   : ==>  Preparing: select id, stock, item_id from item_stock where item_id = ? 
+2019-03-14 17:23:26.976 DEBUG 11170 --- [http-nio-8090-exec-2] c.m.d.ItemStockDOMapper.selectByItemId   : ==> Parameters: 2(Integer)
+2019-03-14 17:23:26.979 DEBUG 11170 --- [http-nio-8090-exec-2] c.m.d.ItemStockDOMapper.selectByItemId   : <==      Total: 1
+2019-03-14 17:23:26.984 DEBUG 11170 --- [http-nio-8090-exec-2] c.m.d.I.selectItemSalesDOByItemId        : ==>  Preparing: select id, sales, item_id from item_sales where item_id = ? 
+2019-03-14 17:23:26.984 DEBUG 11170 --- [http-nio-8090-exec-2] c.m.d.I.selectItemSalesDOByItemId        : ==> Parameters: 2(Integer)
+2019-03-14 17:23:26.986 DEBUG 11170 --- [http-nio-8090-exec-2] c.m.d.I.selectItemSalesDOByItemId        : <==      Total: 1
+2019-03-14 17:23:33.421  INFO 11170 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@ef9296d: startup date [Thu Mar 14 17:22:47 CST 2019]; root of context hierarchy
+2019-03-14 17:23:33.424  INFO 11170 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-03-14 17:23:33.424  INFO 11170 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-03-14 17:23:33.430  INFO 11170 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2019-03-14 18:01:50.662 ERROR 16239 --- [main] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: WARN  for 'com.project'
+2019-03-14 18:01:50.928  INFO 16239 --- [main] com.muteShop.App                         : Starting App on mute-PC with PID 16239 (/home/mute/IdeaProjects/shop/target/classes started by mute in /home/mute/IdeaProjects/shop)
+2019-03-14 18:01:50.932  INFO 16239 --- [main] com.muteShop.App                         : No active profile set, falling back to default profiles: default
+2019-03-14 18:01:51.107  INFO 16239 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4386f16: startup date [Thu Mar 14 18:01:51 CST 2019]; root of context hierarchy
+2019-03-14 18:01:53.545  INFO 16239 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2019-03-14 18:01:53.606  INFO 16239 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-14 18:01:53.608  INFO 16239 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2019-03-14 18:01:53.631  INFO 16239 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/opt/idea/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+2019-03-14 18:01:53.802  INFO 16239 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-14 18:01:53.802  INFO 16239 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2695 ms
+2019-03-14 18:01:53.943  INFO 16239 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-03-14 18:01:53.955  INFO 16239 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-14 18:01:53.956  INFO 16239 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-14 18:01:53.956  INFO 16239 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-03-14 18:01:53.957  INFO 16239 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-14 18:01:54.921  INFO 16239 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 18:01:55.145  INFO 16239 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4386f16: startup date [Thu Mar 14 18:01:51 CST 2019]; root of context hierarchy
+2019-03-14 18:01:55.225  INFO 16239 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.muteShop.App.home()
+2019-03-14 18:01:55.229  INFO 16239 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/item/get],methods=[GET]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.ItemController.getItem(java.lang.Integer)
+2019-03-14 18:01:55.231  INFO 16239 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/item/create],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.ItemController.createItem(java.lang.String,java.lang.String,java.lang.Integer,java.math.BigDecimal,java.lang.String) throws com.muteShop.error.BusinessException
+2019-03-14 18:01:55.232  INFO 16239 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/item/listItem],methods=[GET]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.ItemController.listItem()
+2019-03-14 18:01:55.234  INFO 16239 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.login(java.lang.String,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 18:01:55.235  INFO 16239 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getotp],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getOtp(java.lang.String)
+2019-03-14 18:01:55.236  INFO 16239 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/getUser]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.getUser(java.lang.Integer) throws com.muteShop.error.BusinessException
+2019-03-14 18:01:55.238  INFO 16239 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/register],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public com.muteShop.response.CommonReturnType com.muteShop.controller.UserController.register(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Integer,java.lang.String) throws com.muteShop.error.BusinessException,java.security.NoSuchAlgorithmException
+2019-03-14 18:01:55.245  INFO 16239 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-03-14 18:01:55.246  INFO 16239 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-03-14 18:01:55.271  INFO 16239 --- [main] o.s.w.s.h.BeanNameUrlHandlerMapping      : Mapped URL path [/item] onto handler '/item'
+2019-03-14 18:01:55.281  INFO 16239 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 18:01:55.282  INFO 16239 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-03-14 18:01:55.649  INFO 16239 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2019-03-14 18:01:55.651  INFO 16239 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-03-14 18:01:55.658  INFO 16239 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-03-14 18:01:55.704  INFO 16239 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2019-03-14 18:01:55.709  INFO 16239 --- [main] com.muteShop.App                         : Started App in 5.582 seconds (JVM running for 6.175)
+2019-03-14 18:03:32.265  INFO 16239 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-03-14 18:03:32.265  INFO 16239 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2019-03-14 18:03:32.285  INFO 16239 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2019-03-14 18:03:32.424  INFO 16239 --- [http-nio-8090-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2019-03-14 18:03:32.979 DEBUG 16239 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.insertSelective     : ==>  Preparing: insert into item ( title, price, description, img_url ) values ( ?, ?, ?, ? ) 
+2019-03-14 18:03:33.017 DEBUG 16239 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.insertSelective     : ==> Parameters: Iphone8(String), 888(BigDecimal), 最垃圾的垃圾手机(String), https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1552567861272&di=4005b52f07773d7ee342652a47e1e4ce&imgtype=0&src=http%3A%2F%2F2d.zol-img.com.cn%2Fproduct%2F186_1200x900%2F131%2FceBpgtuUkcWYM.jpg(String)
+2019-03-14 18:03:33.021 DEBUG 16239 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.insertSelective     : <==    Updates: 1
+2019-03-14 18:03:33.037 DEBUG 16239 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.insertSelective  : ==>  Preparing: insert into item_stock ( stock, item_id ) values ( ?, ? ) 
+2019-03-14 18:03:33.038 DEBUG 16239 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.insertSelective  : ==> Parameters: 50(Integer), 3(Integer)
+2019-03-14 18:03:33.039 DEBUG 16239 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.insertSelective  : <==    Updates: 1
+2019-03-14 18:03:33.040 DEBUG 16239 --- [http-nio-8090-exec-1] c.m.d.ItemSalesDOMapper.insertSelective  : ==>  Preparing: insert into item_sales ( sales, item_id ) values ( ?, ? ) 
+2019-03-14 18:03:33.041 DEBUG 16239 --- [http-nio-8090-exec-1] c.m.d.ItemSalesDOMapper.insertSelective  : ==> Parameters: 0(Integer), 3(Integer)
+2019-03-14 18:03:33.043 DEBUG 16239 --- [http-nio-8090-exec-1] c.m.d.ItemSalesDOMapper.insertSelective  : <==    Updates: 1
+2019-03-14 18:03:33.046 DEBUG 16239 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==>  Preparing: select id, title, price, description, img_url from item where id = ? 
+2019-03-14 18:03:33.047 DEBUG 16239 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.selectByPrimaryKey  : ==> Parameters: 3(Integer)
+2019-03-14 18:03:33.058 DEBUG 16239 --- [http-nio-8090-exec-1] c.m.dao.ItemDOMapper.selectByPrimaryKey  : <==      Total: 1
+2019-03-14 18:03:33.061 DEBUG 16239 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.selectByItemId   : ==>  Preparing: select id, stock, item_id from item_stock where item_id = ? 
+2019-03-14 18:03:33.062 DEBUG 16239 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.selectByItemId   : ==> Parameters: 3(Integer)
+2019-03-14 18:03:33.064 DEBUG 16239 --- [http-nio-8090-exec-1] c.m.d.ItemStockDOMapper.selectByItemId   : <==      Total: 1
+2019-03-14 18:04:25.769 DEBUG 16239 --- [http-nio-8090-exec-3] com.muteShop.dao.ItemDOMapper.listItem   : ==>  Preparing: select i.id, i.title, i.price, i.description, i.img_url,s.sales from item i LEFT JOIN item_sales s on i.id = s.item_id ORDER BY sales DESC 
+2019-03-14 18:04:25.769 DEBUG 16239 --- [http-nio-8090-exec-3] com.muteShop.dao.ItemDOMapper.listItem   : ==> Parameters: 
+2019-03-14 18:04:25.772 DEBUG 16239 --- [http-nio-8090-exec-3] com.muteShop.dao.ItemDOMapper.listItem   : <==      Total: 2
+2019-03-14 18:04:25.775 DEBUG 16239 --- [http-nio-8090-exec-3] c.m.d.ItemStockDOMapper.selectByItemId   : ==>  Preparing: select id, stock, item_id from item_stock where item_id = ? 
+2019-03-14 18:04:25.776 DEBUG 16239 --- [http-nio-8090-exec-3] c.m.d.ItemStockDOMapper.selectByItemId   : ==> Parameters: 2(Integer)
+2019-03-14 18:04:25.778 DEBUG 16239 --- [http-nio-8090-exec-3] c.m.d.ItemStockDOMapper.selectByItemId   : <==      Total: 1
+2019-03-14 18:04:25.779 DEBUG 16239 --- [http-nio-8090-exec-3] c.m.d.I.selectItemSalesDOByItemId        : ==>  Preparing: select id, sales, item_id from item_sales where item_id = ? 
+2019-03-14 18:04:25.779 DEBUG 16239 --- [http-nio-8090-exec-3] c.m.d.I.selectItemSalesDOByItemId        : ==> Parameters: 2(Integer)
+2019-03-14 18:04:25.781 DEBUG 16239 --- [http-nio-8090-exec-3] c.m.d.I.selectItemSalesDOByItemId        : <==      Total: 1
+2019-03-14 18:04:25.782 DEBUG 16239 --- [http-nio-8090-exec-3] c.m.d.ItemStockDOMapper.selectByItemId   : ==>  Preparing: select id, stock, item_id from item_stock where item_id = ? 
+2019-03-14 18:04:25.783 DEBUG 16239 --- [http-nio-8090-exec-3] c.m.d.ItemStockDOMapper.selectByItemId   : ==> Parameters: 3(Integer)
+2019-03-14 18:04:25.790 DEBUG 16239 --- [http-nio-8090-exec-3] c.m.d.ItemStockDOMapper.selectByItemId   : <==      Total: 1
+2019-03-14 18:04:25.792 DEBUG 16239 --- [http-nio-8090-exec-3] c.m.d.I.selectItemSalesDOByItemId        : ==>  Preparing: select id, sales, item_id from item_sales where item_id = ? 
+2019-03-14 18:04:25.793 DEBUG 16239 --- [http-nio-8090-exec-3] c.m.d.I.selectItemSalesDOByItemId        : ==> Parameters: 3(Integer)
+2019-03-14 18:04:25.797 DEBUG 16239 --- [http-nio-8090-exec-3] c.m.d.I.selectItemSalesDOByItemId        : <==      Total: 1
+2019-03-14 18:28:57.220  INFO 16239 --- [Thread-3] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4386f16: startup date [Thu Mar 14 18:01:51 CST 2019]; root of context hierarchy
+2019-03-14 18:28:57.221  INFO 16239 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2019-03-14 18:28:57.222  INFO 16239 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2019-03-14 18:28:57.228  INFO 16239 --- [Thread-3] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
